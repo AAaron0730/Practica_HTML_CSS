@@ -1,80 +1,174 @@
-.hero-game {
-  background:
-    radial-gradient(circle at top, rgba(193, 72, 84, 0.18), transparent 34%),
-    linear-gradient(180deg, rgba(145, 38, 52, 0.2), transparent 45%);
+/* ── Cabecera idéntica al index ── */
+
+.ss-page .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7, 8, 13, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
 }
 
-.hero-game .mini-title {
-  color: #ffb0b8;
+.ss-page .topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
 }
 
-.hero-game .hero-copy h2 {
-  color: #fff1f3;
-  text-shadow: 0 0 18px rgba(255, 138, 150, 0.12);
+.ss-page .logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.hero-game .btn-primary {
-  background: linear-gradient(180deg, #ffb0b8 0%, #d45b68 100%);
-  color: #2a0b0f;
+.ss-page .header-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 179, 106, 0.35);
+  box-shadow: inset 0 0 18px rgba(212, 179, 106, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.25rem;
 }
 
-.hero-game .btn-primary:hover {
-  filter: brightness(1.08);
+.ss-page .mini-title {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  font-size: 0.78rem;
 }
 
-.hero-game .btn-secondary {
-  border-color: rgba(255, 176, 184, 0.45);
+.ss-page h1 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.03em;
 }
 
-.hero-game .btn-secondary:hover {
-  color: #ffd3d8;
-  background: rgba(255, 176, 184, 0.09);
+.ss-page .slogan {
+  color: var(--text-soft);
 }
 
-.ss-hero .hero-panel {
-  border-color: rgba(255, 176, 184, 0.24);
+.ss-page .main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
-.ss-hero .hero-panel img {
-  filter: brightness(0.8) contrast(1.05) saturate(1.02);
+.ss-page .main-nav a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
-.ss-hero .hero-panel figcaption {
-  color: #ffd8dd;
+.ss-page .main-nav a:hover,
+.ss-page .main-nav a:focus {
+  color: var(--gold-strong);
+  border-color: rgba(212, 179, 106, 0.35);
+  background: rgba(255, 255, 255, 0.04);
 }
 
-.ss-page .panel,
-.ss-page .contact-form,
+/* ── Hero con acento rojizo de Silksong ── */
+
+.ss-page .hero-game {
+  padding: 5rem 0;
+}
+
+.ss-page .ss-hero {
+  background: linear-gradient(180deg, rgba(180, 60, 70, 0.12), transparent 40%);
+}
+
+.ss-page .short-hero .hero-panel img {
+  min-height: 540px;
+}
+
+/* ── Sección de paneles de 3 columnas ── */
+
+.ss-page .simple-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ss-page .simple-grid .panel h2 {
+  margin-bottom: 1rem;
+}
+
+.ss-page .simple-grid .panel p,
+.ss-page .info-block li {
+  color: var(--text-soft);
+}
+
+/* ── Sección de resumen/lista ── */
+
+.ss-page .info-block ul {
+  padding-left: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* ── Sección de tabla ── */
+
+.ss-page .table-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
 .ss-page .table-wrap {
-  border-color: rgba(255, 176, 184, 0.16);
+  padding: 1.8rem;
 }
 
-.ss-page .light-panel {
-  background: linear-gradient(180deg, rgba(193, 72, 84, 0.14), rgba(255, 255, 255, 0.03));
-}
-
-.ss-page .card {
-  background: linear-gradient(180deg, #1a1016 0%, #130c11 100%);
-}
-
-.ss-page .card h3,
-.ss-page h2,
-.ss-page h3,
 .ss-page caption {
-  color: #fff2f4;
+  margin-bottom: 1rem;
 }
 
-.ss-page thead {
-  background: rgba(193, 72, 84, 0.14);
+.ss-page th,
+.ss-page td {
+  padding: 1rem;
+  text-align: left;
 }
 
-.ss-page label {
-  color: #ffb0b8;
+/* ── Responsive ── */
+
+@media (max-width: 950px) {
+  .ss-page .topbar {
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .ss-page .logo-wrap {
+    flex-direction: column;
+  }
+
+  .ss-page .main-nav ul {
+    justify-content: center;
+  }
+
+  .ss-page .simple-grid,
+  .ss-page .table-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
-.ss-page input:focus,
-.ss-page select:focus,
-.ss-page textarea:focus {
-  outline: 2px solid rgba(255, 176, 184, 0.78);
-  border-color: rgba(255, 176, 184, 0.78);
+@media (max-width: 600px) {
+  .ss-page .hero-game {
+    padding: 3.5rem 0;
+  }
+
+  .ss-page .short-hero .hero-panel img {
+    min-height: 360px;
+  }
+
+  .ss-page th,
+  .ss-page td {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
 }

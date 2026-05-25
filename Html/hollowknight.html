@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página dedicada a Hollow Knight con información general, características y formulario.">
+  <meta name="description" content="Página breve sobre Hollow Knight con información básica del juego.">
   <title>Hollow Knight | Team Cherry Fan Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Css/estilos.css">
   <link rel="stylesheet" href="../Css/hollowknight.css">
 </head>
-<body>
+<body class="hk-page">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header" id="inicio">
     <div class="container topbar">
       <div class="logo-wrap">
-        <img class="header-logo" src="img/logo-placeholder.png" alt="Logo de Team Cherry" width="60" height="60">
+        <img class="header-logo" src="../Imagenes/TeamCherry.png" alt="Logo de Team Cherry" width="60" height="60">
         <div>
           <p class="mini-title">Fan Page</p>
           <h1>Team Cherry</h1>
@@ -26,8 +27,7 @@
       <nav class="main-nav" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="index.html#estudio">Estudio</a></li>
-          <li><a href="#mundo">Mundo</a></li>
+          <li><a href="#info">Información</a></li>
           <li><a href="#tabla">Datos</a></li>
           <li><a href="hollowknight.html">Hollow Knight</a></li>
           <li><a href="silksong.html">Silksong</a></li>
@@ -37,154 +37,93 @@
   </header>
 
   <main id="contenido">
-    <section class="hero hero-game hk-hero">
+    <section class="hero hero-game hk-hero short-hero">
       <div class="container hero-grid">
         <article class="hero-copy">
           <p class="mini-title">Hollow Knight</p>
-          <h2>Descenso a Hallownest</h2>
-          <p>La web oficial presenta Hollow Knight como una aventura clásica de acción en 2D a través de un vasto mundo interconectado. Su propuesta mezcla exploración, combate exigente y una ambientación melancólica que ha convertido al juego en uno de los indies más reconocidos de su generación.</p>
-          <p>También se destaca que el juego fue desarrollado por Team Cherry en Adelaide, South Australia, manteniendo el sello artístico y jugable del estudio.</p>
+          <h2>Acción, exploración y un reino en ruinas</h2>
+          <p>Hollow Knight se presenta oficialmente como una aventura épica de acción a través de un vasto reino de insectos y héroes. El jugador explora cavernas, combate criaturas y descubre secretos en un mundo 2D dibujado a mano.</p>
           <div class="hero-actions">
-            <a class="btn-primary" href="#tabla">Ver datos</a>
+            <a class="btn-primary" href="#info">Leer más</a>
             <a class="btn-secondary" href="silksong.html">Ir a Silksong</a>
           </div>
         </article>
+
         <figure class="hero-panel">
-          <img src="https://picsum.photos/seed/hollow-knight-main/900/1100" alt="Escenario sombrío inspirado en Hollow Knight" width="900" height="1100" loading="lazy">
-          <figcaption>Una aventura marcada por ruinas, insectos y secretos ocultos.</figcaption>
+          <img src="../Imagenes/HollowKnight.png" alt="Escenario oscuro inspirado en Hollow Knight" width="900" height="1000" loading="lazy">
+          <figcaption>Una aventura de tono misterioso y estética dibujada a mano.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section" id="mundo">
-      <div class="container two-col">
+    <section class="section" id="info">
+      <div class="container simple-grid">
         <article class="panel">
-          <h2>Qué hace especial a Hollow Knight</h2>
-          <p>La página oficial describe un reino vasto y arruinado de insectos y héroes. El encanto del juego está en cómo cada zona cuenta algo del pasado de Hallownest mediante enemigos, música, escenarios y exploración libre.</p>
-          <p>Además del combate, el progreso se apoya en nuevas habilidades, rutas ocultas y enfrentamientos contra jefes que obligan a dominar el movimiento.</p>
+          <h2>¿Qué tipo de juego es?</h2>
+          <p>Hollow Knight encaja dentro de la acción y aventura con fuerte componente de exploración. También suele identificarse como metroidvania por su mapa interconectado y por el desbloqueo progresivo de zonas mediante nuevas habilidades.</p>
         </article>
-        <aside class="panel light-panel">
-          <h3>Elementos destacados</h3>
-          <ul>
-            <li>Mapa interconectado con gran sensación de descubrimiento.</li>
-            <li>Combate preciso con enfoque en reflejos y aprendizaje.</li>
-            <li>Estética dibujada a mano con tono oscuro y elegante.</li>
-            <li>Narrativa ambiental con mucho misterio.</li>
-          </ul>
-        </aside>
+
+        <article class="panel">
+          <h2>Estilo artístico</h2>
+          <p>Uno de sus rasgos más llamativos es el arte 2D dibujado a mano. Su estilo combina escenarios oscuros, personajes sencillos pero expresivos y una ambientación elegante y melancólica.</p>
+        </article>
+
+        <article class="panel">
+          <h2>Jugabilidad</h2>
+          <p>El juego mezcla exploración, plataformas, combate preciso y enfrentamientos contra jefes. Su ritmo invita a descubrir caminos ocultos, mejorar habilidades y comprender poco a poco el mundo de Hallownest.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section alt-bg">
-      <div class="container narrow-block">
-        <h2>Zonas y sensaciones</h2>
-        <p class="section-text centered-text">Hollow Knight construye su identidad a través de escenarios muy diferentes entre sí, pero conectados bajo una misma atmósfera. Cada zona aporta una emoción distinta al avance del jugador.</p>
-        <div class="cards two-cards">
-          <article class="card">
-            <img src="https://picsum.photos/seed/hallownest-city/700/420" alt="Ciudad antigua inspirada en Hollow Knight" width="700" height="420" loading="lazy">
-            <div class="card-content">
-              <h3>Hallownest</h3>
-              <p>Un reino en ruinas que transmite historia, decadencia y curiosidad constante.</p>
-            </div>
-          </article>
-          <article class="card">
-            <img src="https://picsum.photos/seed/hollow-boss/700/420" alt="Entorno oscuro inspirado en un combate contra jefe" width="700" height="420" loading="lazy">
-            <div class="card-content">
-              <h3>Desafío</h3>
-              <p>Los jefes y enemigos convierten cada avance en una prueba de precisión y paciencia.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="tabla">
+    <section class="section alt-bg" id="tabla">
       <div class="container table-layout">
-        <article>
-          <h2>Información del juego</h2>
-          <p>Esta tabla resume algunos aspectos generales de Hollow Knight para presentar la información de forma clara y visual dentro de la práctica.</p>
-          <ol>
-            <li>Aventura de acción en 2D.</li>
-            <li>Mundo interconectado y explorable.</li>
-            <li>Combate exigente y progresión por habilidades.</li>
-            <li>Diseño artístico muy reconocible.</li>
-          </ol>
+        <article class="panel info-block">
+          <h2>Resumen básico</h2>
+          <ul>
+            <li>Género: acción, aventura e indie.</li>
+            <li>Estudio: Team Cherry.</li>
+            <li>Estilo visual: 2D dibujado a mano.</li>
+            <li>Tono: oscuro, elegante y misterioso.</li>
+          </ul>
         </article>
+
         <div class="table-wrap">
           <table>
-            <caption>Datos básicos de Hollow Knight</caption>
+            <caption>Datos rápidos de Hollow Knight</caption>
             <thead>
               <tr>
                 <th>Aspecto</th>
-                <th>Detalle</th>
-                <th>Valor</th>
+                <th>Descripción</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Género</td>
-                <td>Acción y aventura en 2D</td>
-                <td>Exploración</td>
+                <td>Acción y aventura con exploración</td>
               </tr>
               <tr>
-                <td>Estudio</td>
-                <td>Team Cherry</td>
-                <td>Indie</td>
+                <td>Arte</td>
+                <td>2D clásico dibujado a mano</td>
               </tr>
               <tr>
-                <td>Ambientación</td>
-                <td>Reino subterráneo arruinado</td>
-                <td>Misteriosa</td>
+                <td>Mundo</td>
+                <td>Reino interconectado llamado Hallownest</td>
               </tr>
               <tr>
-                <td>Fortaleza</td>
-                <td>Combate, arte y atmósfera</td>
-                <td>Muy alta</td>
+                <td>Sensación</td>
+                <td>Misterio, reto y descubrimiento</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
-
-    <section class="section contact-section">
-      <div class="container contact-grid">
-        <article class="panel">
-          <h2>Formulario Hollow Knight</h2>
-          <p>Este formulario sirve para recoger opiniones sobre zonas favoritas, jefes memorables o elementos destacados del juego.</p>
-        </article>
-        <form class="contact-form" action="#" method="post">
-          <div class="form-group">
-            <label for="nombre-hk">Nombre</label>
-            <input type="text" id="nombre-hk" name="nombre-hk" placeholder="Tu nombre" required>
-          </div>
-          <div class="form-group">
-            <label for="email-hk">Email</label>
-            <input type="email" id="email-hk" name="email-hk" placeholder="correo@ejemplo.com" required>
-          </div>
-          <div class="form-group">
-            <label for="zona-hk">Zona favorita</label>
-            <select id="zona-hk" name="zona-hk">
-              <option value="bocasucia">Bocasucia</option>
-              <option value="ciudad">Ciudad de Lágrimas</option>
-              <option value="nido">Nido Profundo</option>
-              <option value="jardines">Jardines de la Reina</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="mensaje-hk">Mensaje</label>
-            <textarea id="mensaje-hk" name="mensaje-hk" rows="5" placeholder="Cuéntanos qué te gusta de Hollow Knight"></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Enviar</button>
-        </form>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>Página de práctica dedicada a Hollow Knight.</p>
-      <p>Inspirada en la información pública de Team Cherry y la web oficial del juego.</p>
+      <p>Página breve de práctica sobre Hollow Knight.</p>
+      <p>Team Cherry, Hollow Knight y Silksong forman parte del mismo universo del sitio.</p>
     </div>
   </footer>
 </body>
