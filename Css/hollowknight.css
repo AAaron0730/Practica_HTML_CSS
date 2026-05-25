@@ -51,6 +51,33 @@
   text-align: left;
 }
 
+/* Añadido */
+.hk-page .panel {
+  min-height: 100%;
+}
+
+.hk-page .panel p {
+  line-height: 1.7;
+}
+
+.hk-page .section.alt-bg .panel {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.hk-page .table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hk-page .table-wrap tbody tr:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hk-page .table-wrap td,
+.hk-page .table-wrap th {
+  vertical-align: top;
+}
+
 @media (max-width: 950px) {
   .hk-page .simple-grid,
   .hk-page .table-layout {

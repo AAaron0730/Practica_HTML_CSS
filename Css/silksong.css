@@ -41,7 +41,10 @@
   font-size: 0.78rem;
 }
 
-.ss-page h1 {
+.ss-page h1,
+.ss-page h2,
+.ss-page h3,
+.ss-page caption {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.03em;
 }
@@ -73,51 +76,98 @@
   background: rgba(255, 255, 255, 0.04);
 }
 
-/* ── Hero con acento rojizo de Silksong ── */
+/* ── Hero ampliado ── */
 
 .ss-page .hero-game {
   padding: 5rem 0;
 }
 
 .ss-page .ss-hero {
-  background: linear-gradient(180deg, rgba(180, 60, 70, 0.12), transparent 40%);
+  background:
+    radial-gradient(circle at top right, rgba(180, 60, 70, 0.16), transparent 30%),
+    linear-gradient(180deg, rgba(180, 60, 70, 0.1), transparent 42%);
 }
 
-.ss-page .short-hero .hero-panel img {
-  min-height: 540px;
+.ss-page .extended-hero .hero-copy h2 {
+  max-width: 12ch;
 }
 
-/* ── Sección de paneles de 3 columnas ── */
+.ss-page .extended-hero .hero-panel img {
+  min-height: 580px;
+  object-fit: cover;
+  filter: brightness(0.82) contrast(1.04) saturate(1.05);
+}
 
-.ss-page .simple-grid {
+/* ── Bloque inicial ── */
+
+.ss-page .intro-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ss-page .large-panel,
+.ss-page .side-panel,
+.ss-page .feature-card,
+.ss-page .systems-main,
+.ss-page .stack-card,
+.ss-page .contact-panel {
+  min-height: 100%;
+}
+
+.ss-page .accent-panel {
+  background: linear-gradient(180deg, rgba(180, 60, 70, 0.12), rgba(255, 255, 255, 0.03));
+}
+
+.ss-page .side-panel ul,
+.ss-page .info-block ol {
+  padding-left: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* ── Zonas y ambientación ── */
+
+.ss-page .section-heading {
+  margin-bottom: 2rem;
+}
+
+.ss-page .feature-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
-.ss-page .simple-grid .panel h2 {
-  margin-bottom: 1rem;
+.ss-page .feature-card h3,
+.ss-page .stack-card h3 {
+  margin-bottom: 0.9rem;
 }
 
-.ss-page .simple-grid .panel p,
-.ss-page .info-block li {
-  color: var(--text-soft);
-}
+/* ── Sistemas ── */
 
-/* ── Sección de resumen/lista ── */
-
-.ss-page .info-block ul {
-  padding-left: 1.3rem;
-  margin-top: 1rem;
-}
-
-/* ── Sección de tabla ── */
-
-.ss-page .table-layout {
+.ss-page .systems-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 0.9fr;
   gap: 2rem;
-  align-items: center;
+  align-items: start;
+}
+
+.ss-page .systems-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.ss-page .stack-card {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ── Tabla ampliada ── */
+
+.ss-page .expanded-table-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
 .ss-page .table-wrap {
@@ -134,9 +184,28 @@
   text-align: left;
 }
 
+/* ── Contacto ── */
+
+.ss-page .ss-contact-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 2rem;
+  align-items: start;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 950px) {
+  .ss-page .topbar,
+  .ss-page .intro-layout,
+  .ss-page .feature-columns,
+  .ss-page .systems-layout,
+  .ss-page .expanded-table-layout,
+  .ss-page .ss-contact-grid {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
   .ss-page .topbar {
     flex-direction: column;
     justify-items: center;
@@ -150,11 +219,6 @@
   .ss-page .main-nav ul {
     justify-content: center;
   }
-
-  .ss-page .simple-grid,
-  .ss-page .table-layout {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 600px) {
@@ -162,7 +226,7 @@
     padding: 3.5rem 0;
   }
 
-  .ss-page .short-hero .hero-panel img {
+  .ss-page .extended-hero .hero-panel img {
     min-height: 360px;
   }
 
