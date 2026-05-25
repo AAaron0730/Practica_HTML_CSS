@@ -1,0 +1,83 @@
+.hero-game {
+  background:
+    radial-gradient(circle at top, rgba(124, 156, 214, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(82, 104, 150, 0.18), transparent 45%);
+}
+
+.hero-game .mini-title {
+  color: #b8d6ff;
+}
+
+.hero-game .hero-copy h2 {
+  color: #eef6ff;
+  text-shadow: 0 0 18px rgba(151, 191, 255, 0.12);
+}
+
+.hero-game .btn-primary {
+  background: linear-gradient(180deg, #dcecff 0%, #9fc1ef 100%);
+  color: #09111d;
+}
+
+.hero-game .btn-primary:hover {
+  filter: brightness(1.08);
+}
+
+.hero-game .btn-secondary {
+  border-color: rgba(159, 193, 239, 0.45);
+}
+
+.hero-game .btn-secondary:hover {
+  color: #d5e8ff;
+  background: rgba(159, 193, 239, 0.09);
+}
+
+.hk-hero .hero-panel {
+  border-color: rgba(159, 193, 239, 0.25);
+}
+
+.hk-hero .hero-panel img {
+  filter: brightness(0.78) contrast(1.04) saturate(0.95);
+}
+
+.hk-hero .hero-panel figcaption {
+  color: #d7e8ff;
+}
+
+.hk-hero .panel,
+.hk-hero .contact-form,
+.hk-hero .table-wrap,
+.hk-page .panel,
+.hk-page .contact-form,
+.hk-page .table-wrap {
+  border-color: rgba(159, 193, 239, 0.16);
+}
+
+.hk-page .light-panel {
+  background: linear-gradient(180deg, rgba(124, 156, 214, 0.14), rgba(255, 255, 255, 0.03));
+}
+
+.hk-page .card {
+  background: linear-gradient(180deg, #101827 0%, #0b1320 100%);
+}
+
+.hk-page .card h3,
+.hk-page h2,
+.hk-page h3,
+.hk-page caption {
+  color: #edf5ff;
+}
+
+.hk-page thead {
+  background: rgba(124, 156, 214, 0.14);
+}
+
+.hk-page label {
+  color: #b8d6ff;
+}
+
+.hk-page input:focus,
+.hk-page select:focus,
+.hk-page textarea:focus {
+  outline: 2px solid rgba(184, 214, 255, 0.75);
+  border-color: rgba(184, 214, 255, 0.75);
+}

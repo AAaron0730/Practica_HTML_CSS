@@ -81,17 +81,15 @@ img {
   gap: 1rem;
 }
 
-.logo-mark {
-  width: 72px;
-  height: 72px;
-  border: 1px solid rgba(212, 179, 106, 0.5);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-family: 'Cinzel', serif;
-  font-size: 1.5rem;
-  color: var(--gold-strong);
+.header-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 179, 106, 0.35);
   box-shadow: inset 0 0 18px rgba(212, 179, 106, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.25rem;
 }
 
 h1,
@@ -267,6 +265,21 @@ ol {
   gap: 1.5rem;
 }
 
+.narrow-block {
+  max-width: 920px;
+}
+
+.centered-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.two-cards {
+  grid-template-columns: repeat(2, minmax(280px, 360px));
+  justify-content: center;
+}
+
 .card {
   background: #0f1420;
 }
@@ -415,4 +428,16 @@ textarea:focus {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.hero-game .hero-panel img {
+  min-height: 540px;
+}
+
+.hk-hero {
+  background: linear-gradient(180deg, rgba(120, 150, 205, 0.08), transparent 40%);
+}
+
+.ss-hero {
+  background: linear-gradient(180deg, rgba(180, 60, 70, 0.12), transparent 40%);
 }
